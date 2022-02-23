@@ -10,7 +10,7 @@ public class PropertiesSettings {
 
     static Properties prop = new Properties();
 
-    static public String getProperty(String str) {
+    public static String getProperty(String str) {
         try {
             prop.load(new FileInputStream(Objects.requireNonNull(PropertiesSettings.class.getClassLoader().getResource(CONFIG)).getFile()));
 
